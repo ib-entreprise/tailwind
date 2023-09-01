@@ -1,0 +1,16 @@
+/* Utilisation de la directive @apply pour réutiliser des styles */
+.site-container {
+    @apply bg-white p-8 rounded-lg shadow-md;
+}
+
+.site-title {
+    @apply text-3xl font-semibold mb-4;
+}
+
+.site-description {
+    @apply text-gray-600;
+}
+
+.site-button {
+    @apply mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover: bg-blue-600;
+}
