@@ -5,6 +5,7 @@
 /* Styles personnalisés */
 @import './custom-styles.css';
 
+/* Classe pour la police Dancing Script */
 .font-dancing-script {
     font-family: 'Dancing Script', cursive;
 }
