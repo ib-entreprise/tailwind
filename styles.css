@@ -4,3 +4,7 @@
 
 /* Styles personnalisés */
 @import './custom-styles.css';
+
+.font-dancing-script {
+    font-family: 'Dancing Script', cursive;
+}
