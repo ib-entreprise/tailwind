@@ -11,6 +11,12 @@
   font-family: 'Dancing Script', cursive;
 }
 
+.modal-blur {
+  body {
+    background: var(--tw-blur);
+  }
+}
+
 *,
 ::before,
 ::after {

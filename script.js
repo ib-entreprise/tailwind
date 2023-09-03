@@ -1,10 +1,11 @@
-var button_tacos = document.getElementById("button_tacos");
-var button_burger = document.getElementById("button_burger");
-var button_pizza = document.getElementById("button_pizza");
+const button_tacos = document.getElementById("button_tacos");
+const button_burger = document.getElementById("button_burger");
+const button_pizza = document.getElementById("button_pizza");
 
-var div_tacos = document.getElementById("div_tacos");
-var div_burger = document.getElementById("div_burger");
-var div_pizza = document.getElementById("div_pizza");
+const div_tacos = document.getElementById("div_tacos");
+const div_burger = document.getElementById("div_burger");
+
+const div_pizza = document.getElementById("div_pizza");
 
 div_tacos.style.display = 'none';
 div_burger.style.display = 'block';
@@ -25,4 +26,37 @@ button_pizza.addEventListener("click", function () {
     div_pizza.style.display = 'block';
     div_tacos.style.display = 'none';
     div_burger.style.display = 'none';
+});
+
+
+const div_galerie = document.getElementById('galerie');
+const div_galerie_item = document.getElementById('galerie-item');
+
+// div_galerie_item.style.display = 'none';
+
+var galerie_image = div_galerie.querySelectorAll('img');
+var modalImage = document.querySelector("#myModal img"); // Sélectionnez l'élément img de la modal
+
+galerie_image.forEach(image => {
+    image.addEventListener("mouseenter", function () {
+        image.style.borderRadius = '30px';
+        image.style.padding = '10px';
+    });
+    image.addEventListener("mouseleave", function () {
+        image.style.borderRadius = '0';
+        image.style.padding = '0';
+    });
+
+    image.addEventListener("click", function () {
+        modalImage.src = image.src;
+        document.getElementById("backgroundBlur").classList.remove("hidden");
+        document.getElementById("myModal").classList.remove("hidden");
+    });
+
+});
+
+document.getElementById("modalClose").addEventListener("click", function () {
+    document.getElementById("myModal").classList.add("hidden");
+    document.getElementById("backgroundBlur").classList.add("hidden");
+
 });
