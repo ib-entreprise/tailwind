@@ -15,6 +15,37 @@
 
 <body class="bg-white">
     <header>
+        <!--navbar mobile-->
+        <div class="flex  bg-gray-900  text-white">
+            <div class="flex-1 text-left font-dancing-script text-[20px] md:hidden">
+                le Fast-Food Afro
+            </div>
+            <div class="flex-1 text-right">
+                <span id="button_start_menu" class="fa fa-bars font-bold text-[34px] pr-4 md:hidden"></span>
+                <span id="button_end_menu" class="fa fa-close font-bold text-[34px] hidden pr-4 md:hidden"></span>
+            </div>
+        </div>
+        <div id="menuBlur" class=" inset-0 bg-gray-900  text-white text-[24px] hidden">
+            <div class="bg-gray-900 text-white">
+                <div class="grid grid-col-1">
+                    <ul class="text-center">
+                        <li class="mb-4 hover:text-orange-500">Galerie</li>
+                        <li class="mb-4 hover:text-orange-500">Le Menu</li>
+                        <li class="mb-4 hover:text-orange-500">Plats Du Jour</li>
+                        <li class="mb-4 hover:text-orange-500">A Propos De Nous</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid grid-col-1 mt-4">
+                <ul class="flex justify-center items-center mx-auto gap-4 mb-4">
+                    <li><i class="fa fa-user"></i></li>
+                    <li><i class="fa fa-cart-shopping"></i></li>
+                    <li><i class="fa fa-search"></i></li>
+                    <li><button class="bg-orange-500 px-2 rounded-lg">Commandez</button></li>
+                </ul>
+            </div>
+        </div>
+        </div>
         <nav class="flex bg-gray-900 text-white  hidden">
             <div class="w-1/3 p-4">
                 <h4>Le Restau</h4>
@@ -37,6 +68,7 @@
                 </ul>
             </div>
         </nav>
+
         <section class="h-screen bg-gray-400 relative overflow-hidden mb-8">
             <!-- Conteneur du carrousel -->
             <div id="image-carousel" class="h-full flex transition-transform duration-500 ease-in-out transform">

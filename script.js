@@ -1,6 +1,8 @@
 const button_tacos = document.getElementById("button_tacos");
 const button_burger = document.getElementById("button_burger");
 const button_pizza = document.getElementById("button_pizza");
+const button_start_menu = document.getElementById("button_start_menu");
+const button_end_menu = document.getElementById("button_end_menu");
 
 const div_tacos = document.getElementById("div_tacos");
 const div_burger = document.getElementById("div_burger");
@@ -92,4 +94,20 @@ nextButton.addEventListener("click", () => {
         currentImageIndex++;
         showImage(currentImageIndex);
     }
+});
+
+// **************************
+//****** */ navbar mobile ******
+// *************************
+
+button_start_menu.addEventListener('click', () => {
+    button_start_menu.style.display = 'none';
+    button_end_menu.style.display = 'block';
+    menuBlur.style.display = 'block';
+});
+
+button_end_menu.addEventListener('click', () => {
+    button_start_menu.style.display = 'block';
+    button_end_menu.style.display = 'none';
+    menuBlur.style.display = 'none';
 });
