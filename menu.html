@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>le Restau Du Siecle</title>
+    <title>Mon Site avec Tailwind CSS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -76,127 +76,9 @@
             </div>
         </nav>
 
-        <section class="h-screen bg-gray-400 relative overflow-hidden mb-8">
-            <!-- Conteneur du carrousel -->
-            <div id="image-carousel" class="h-full flex transition-transform duration-500 ease-in-out transform">
-                <!-- Image 1 -->
-                <div class="w-screen h-screen flex-shrink-0 relative">
-                    <img src="images/tacos1.jpg" alt="Image 1" class="w-full h-full object-cover" />
-                    <div class="absolute grid grid-cols-1 inset-0 md:grid-cols-2  py-[100px] px-10 md:px-20 ">
-                        <div class="md:px-[100px] md:py-[150px]">
-                            <h1
-                                class="text-[54px] text-white font-semibold font-dancing-script text-center md:text-left md:mb-10">
-                                Le
-                                Tacos Du Siecle</h1>
-                            <p class="text-[20px] text-white text-center md:text-left md:mb-10">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi facilis est
-                                officiis soluta delectus
-                                voluptas suscipit ab dignissimos iure ipsum consectetur minima, repellendus excepturi
-                                quasi
-                                doloremque tenetur.
-                                Voluptas, facere.
-                            </p>
-                            <button
-                                class="bg-orange-500 px-4 text-center rounded-xl text-xl py-2 text-white mx-auto md:mx-0">Commander
-                                <i class="fa fa-cart-shopping"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!--carousel item 2-->
-                <div class="w-screen h-screen flex-shrink-0 relative">
-                    <img src="images/pizza1.jpg" alt="Image 1" class="w-full h-full object-cover" />
-                    <div class="absolute grid grid-cols-1 inset-0 md:grid-cols-2  py-[100px] px-10 md:px-20 ">
-                        <div class="md:px-[100px] md:py-[150px]">
-                            <h1
-                                class="text-[54px] text-white font-semibold font-dancing-script text-center md:text-left md:mb-10">
-                                La Pizza La Plus Vendue
-                            </h1>
-                            <p class="text-[20px] text-white text-center md:text-left md:mb-10">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi facilis est
-                                officiis soluta delectus
-                                voluptas suscipit ab dignissimos iure ipsum consectetur minima, repellendus excepturi
-                                quasi
-                                doloremque tenetur.
-                                Voluptas, facere.
-                            </p>
-                            <button
-                                class="bg-orange-500 px-4 text-center rounded-xl text-xl py-2 text-white mx-auto md:mx-0">Commander
-                                <i class="fa fa-cart-shopping"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--carousel item 3-->
-                <div class="w-screen h-screen flex-shrink-0 relative">
-                    <img src="images/burger3.jpg" alt="Image 1" class="w-full h-full object-cover" />
-                    <div class="absolute grid grid-cols-1 inset-0 md:grid-cols-2  py-[100px] px-10 md:px-20 ">
-                        <div class="md:px-[100px] md:py-[150px] ">
-                            <h1
-                                class="text-[54px] text-white font-semibold font-dancing-script text-center md:text-left md:mb-10">
-                                Un Burger Comme Vous L'aimez
-                            </h1>
-                            <p
-                                class="text-[20px] text-white text-center md:text-left md:mb-10  bg-gray-800 bg-opacity-95">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi facilis est
-                                officiis soluta delectus
-                                voluptas suscipit ab dignissimos iure ipsum consectetur minima, repellendus excepturi
-                                quasi
-                                doloremque tenetur.
-                                Voluptas, facere.
-                            </p>
-                            <button
-                                class="bg-orange-500 px-4 text-center rounded-xl text-xl py-2 text-white mx-auto md:mx-0">Commander
-                                <i class="fa fa-cart-shopping"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- Ajoutez plus d'images ici... -->
-            </div>
-
-            <!-- Boutons de navigation du carrousel -->
-            <button id="prev-button"
-                class="absolute bottom-4 right-1/2 transform -translate-y-1/2 px-4 py-2 bg-gray-800 text-white rounded-l focus:outline-none m-4">
-                < </button>
-                    <button id="next-button"
-                        class="absolute bottom-4 left-1/2 transform -translate-y-1/2 px-4 py-2 bg-gray-800 text-white rounded-r focus:outline-none m-4">
-                        >
-                    </button>
-        </section>
 
     </header>
-    <section class=" md:my-20 md:mx-10 ">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <div class="bg-gray-900 flex flex-col sm:flex-row md:rounded-lg p-4 ">
-                <div class="md:w-1/3 mx-auto">
-                    <img src="images/burger1.jpg" class="rounded-full mx-auto py-4" width="200" alt="">
-                </div>
-                <div class="md:w-2/3 text-white my-auto mx-auto md:mx-2">
-                    <h5 class="mb-4 font-bold text-[24px] font-dancing-script ">today plats</h5>
-                    <h4 class="mb-4 font-bold text-[34px] font-dancing-script ">20% off</h4>
-                    <button class="bg-orange-500 text-white text-[30px] px-4 rounded-md "> Commandez
-                        <i class="fa fa-cart-shopping"></i> </button>
-                </div>
-            </div>
-            <div class="bg-gray-900 flex flex-col sm:flex-row md:rounded-lg p-4 ">
-                <div class="md:w-1/3 mx-auto">
-                    <img src="images/burger5.png" class="rounded-full mx-auto py-4" width="200" alt="">
-                </div>
-                <div class="md:w-2/3 text-white my-auto mx-auto md:mx-2">
-                    <h5 class="mb-4 font-bold text-[24px] font-dancing-script ">today Entrees</h5>
-                    <h4 class="mb-4 font-bold text-[34px] font-dancing-script ">15% off</h4>
-                    <button class="bg-orange-500 text-white text-[30px] px-4 rounded-md"> Commandez <i
-                            class="fa fa-cart-shopping"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="mx-10 ">
         <div class="flex items-center">
             <h1 class="  text-gray-900 text-[34px] mx-auto font-dancing-script">Our Menu</h1>
@@ -282,7 +164,7 @@
                 <div class="md:p-10 my-4 ">
                     <img src="images/burger1.jpg" class="w-full object-cover h-64 rounded-t-lg" alt="tacos">
                     <div class="bg-gray-900 text-white p-4 text-[18px] rounded-b-lg">
-                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Tacos</h2>
+                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Burger</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum neque animi eum
                             ipsam?
                             Doloribus perferendis ratione distinctio deserunt omnis eaque accusantium cum, similique
@@ -299,7 +181,7 @@
                 <div class="md:p-10 my-4 ">
                     <img src="images/burger2.jpg" class="w-full object-cover h-64 rounded-t-lg" alt="tacos">
                     <div class="bg-gray-900 text-white p-4 text-[18px] rounded-b-lg">
-                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Tacos</h2>
+                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Burger</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum neque animi eum
                             ipsam?
                             Doloribus perferendis ratione distinctio deserunt omnis eaque accusantium cum, similique
@@ -316,7 +198,7 @@
                 <div class="md:p-10 my-4 ">
                     <img src="images/burger3.jpg" class="w-full object-cover h-64 rounded-t-lg" alt="tacos">
                     <div class="bg-gray-900 text-white p-4 text-[18px] rounded-b-lg">
-                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Tacos</h2>
+                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Burger</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum neque animi eum
                             ipsam?
                             Doloribus perferendis ratione distinctio deserunt omnis eaque accusantium cum, similique
@@ -339,7 +221,7 @@
                 <div class="md:p-10 my-4 ">
                     <img src="images/pizza1.jpg" class="w-full object-cover h-64 rounded-t-lg" alt="tacos">
                     <div class="bg-gray-900 text-white p-4 text-[18px] rounded-b-lg">
-                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Tacos</h2>
+                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious pizza</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum neque animi eum
                             ipsam?
                             Doloribus perferendis ratione distinctio deserunt omnis eaque accusantium cum, similique
@@ -356,7 +238,7 @@
                 <div class="md:p-10 my-4 ">
                     <img src="images/pizza2.jpg" class="w-full object-cover h-64 rounded-t-lg" alt="tacos">
                     <div class="bg-gray-900 text-white p-4 text-[18px] rounded-b-lg">
-                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Tacos</h2>
+                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious pizza</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum neque animi eum
                             ipsam?
                             Doloribus perferendis ratione distinctio deserunt omnis eaque accusantium cum, similique
@@ -373,7 +255,7 @@
                 <div class="md:p-10 my-4 ">
                     <img src="images/pizza3.jpg" class="w-full object-cover h-64 rounded-t-lg" alt="tacos">
                     <div class="bg-gray-900 text-white p-4 text-[18px] rounded-b-lg">
-                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious Tacos</h2>
+                        <h2 class="font-bold text-[34px] md:text-[24px] mb-4">Delicious pizza</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum neque animi eum
                             ipsam?
                             Doloribus perferendis ratione distinctio deserunt omnis eaque accusantium cum, similique
@@ -390,121 +272,6 @@
 
         </div>
 
-    </section>
-    <section class="flex text-[24px] my-8 h-full">
-        <div class="grid grid-cols-1 md:grid-cols-2 bg-gray-900 text-white">
-            <div class="  order-2 md:order-1 p-8">
-                <img src="images/burger4.jpg" class="w-full rounded-md " alt="">
-            </div>
-            <div class="  order-1 md:order-2 p-8 my-auto">
-                <h4 class="font-bold text-[40px] mb-8 font-dancing-script">We are Feane</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam quis ipsa deserunt
-                    minus
-                    expedita. Tempora beatae tenetur veniam nisi mollitia suscipit quam reiciendis porro obcaecati!
-                    Tenetur recusandae molestias blanditiis.</p>
-                <button class="bg-yellow-500 text-white text-[30px] rounded-md mt-8 px-4">Read More</button>
-            </div>
-        </div>
-    </section>
-    <section id="galerie">
-        <div class="flex gap-4 mb-4">
-            <div class="w-4/5">
-                <div class="flex gap-4 mb-4">
-                    <div class="w-1/2">
-                        <img class="w-full h-full" src="images/burger1.jpg" alt="">
-                    </div>
-                    <div class="w-1/2">
-                        <img class="w-full h-full" src="images/burger2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/5">
-                <img class="w-full h-full" src="images/burger3.jpg" alt="">
-            </div>
-        </div>
-        <div class="flex gap-4 mb-4">
-            <div class="w-1/5">
-                <img class="w-full h-64" src="images/pizza3.jpg" alt="">
-            </div>
-            <div class="w-4/5">
-                <div class="flex gap-4 mb-4">
-                    <div class="w-1/2">
-                        <img class="w-full h-64" src="images/tacos2.jpg" alt="">
-                    </div>
-                    <div class="w-1/2">
-                        <img class="w-full h-64" src="images/tacos3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex gap-4 mb-4">
-            <div class="w-1/2">
-                <div class="flex gap-4 mb-4">
-                    <div class="w-1/2">
-                        <img class="w-full h-full" src="images/burger2.jpg" alt="">
-                    </div>
-                    <div class="w-1/2">
-                        <img class="w-full h-full" src="images/tacos3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/2">
-                <div class="flex gap-4 mb-4">
-                    <div class="w-1/2">
-                        <img class="w-full h-64" src="images/pizza2.jpg" alt="">
-                    </div>
-                    <div class="w-1/2">
-                        <img class="w-full h-64" src="images/burger5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class=" ">
-        <div id="backgroundBlur" class="fixed inset-0 bg-gray-800 bg-opacity-95 hidden"></div>
-
-        <div id="myModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-            <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-                <div class="modal-content py-4 text-left px-6">
-                    <button id="modalClose"
-                        class="px-4 py-2 flex-1 bg-gray-500 text-white  rounded hover:bg-gray-400 focus:outline-none">Fermer
-                    </button>
-                    <h2 class="text-2xl font-semibold">Pizza Delicious</h2>
-                    <div class="flex items-center">
-                        <img src="images/pizza1.jpg" class="mx-auto w-full h-64" alt="">
-                    </div>
-                    <p class="text-[20px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat voluptates
-                        impedit distinctio
-                        quod eveniet iure error labore ullam et aliquam ad sed adipisci ex ab aspernatur, reprehenderit
-                        accusamus quasi dignissimos.</p>
-                </div>
-                <div class="modal-footer p-4 flex">
-                    <span class="flex-1 text-orange-500 text-left text-[24px] px-4">$19.2</span>
-                    <span class="flex-1 text-right px-4 fa fa-cart-shopping text-orange-500 text-[24px]"></span>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="palt_du_jour">
-        <h1 class="text-center text-[34px] font-dancing-script">Nos Plats Du Jour</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4 ">
-            <div class="relative mb-4">
-                <img src="images/burger5.png" class="h-64 w-full" alt="burger5">
-                <p class="absolute left-8 top-4 text-white font-dancing-script text-[34px]">Burger Viande Hachee</p>
-                <div class="absolute left-0 bottom-0 bg-orange-500 text-white px-4 py-4">20%</div>
-            </div>
-            <div class="relative mb-4">
-                <img src="images/tacos3.jpg" class="h-64 w-full" alt="burger5">
-                <p class="absolute left-8 top-4 text-white font-dancing-script text-[34px]">Burger Viande Hachee</p>
-                <div class="absolute left-0 bottom-0 bg-orange-500 text-white px-4 py-4">20%</div>
-            </div>
-            <div class="relative mb-4">
-                <img src="images/burger2.jpg" class="h-64 w-full" alt="burger5">
-                <p class="absolute left-8 top-4 text-white font-dancing-script text-[34px]">Burger Viande Hachee</p>
-                <div class="absolute left-0 bottom-0 bg-orange-500 text-white px-4 py-4">20%</div>
-            </div>
-        </div>
     </section>
 
     <footer>
@@ -569,7 +336,6 @@
     </footer>
 
     <script src="script.js" defer></script>
-    <script src="carousel.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le Restau Du Siecle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-white">
+    <header>
+        <!--navbar mobile-->
+        <div class="flex  bg-gray-900  text-white">
+            <div class="flex-1 text-left font-dancing-script text-[20px] md:hidden">
+                <a href="index.html">le Fast-Food Afro</a>
+            </div>
+            <div class="flex-1 text-right">
+                <span id="button_start_menu" class="fa fa-bars font-bold text-[34px] pr-4 md:hidden"></span>
+                <span id="button_end_menu" class="fa fa-close font-bold text-[34px] hidden pr-4 md:hidden"></span>
+            </div>
+        </div>
+        <div id="menuBlur" class=" inset-0 bg-gray-900  text-white text-[24px] hidden">
+            <div class="bg-gray-900 text-white">
+                <div class="grid grid-col-1">
+                    <ul class="text-center">
+                        <li class="mb-4 hover:text-orange-500"><a href="galerie.html">Galerie</a></li>
+                        <li class="mb-4 hover:text-orange-500"><a href="menu.html">Le Menu</a></li>
+                        <li class="mb-4 hover:text-orange-500"><a href="platDuJour.html">Plats Du Jour</a></li>
+                        <li class="mb-4 hover:text-orange-500"><a href="about.html">Nous Sommes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid grid-col-1 mt-4">
+                <ul class="flex justify-center items-center mx-auto gap-4 mb-4">
+                    <li><i class="fa fa-user"></i></li>
+                    <li><i class="fa fa-cart-shopping"></i></li>
+                    <li><i class="fa fa-search"></i></li>
+                    <li><button class="bg-orange-500 px-2 rounded-lg">Commandez</button></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <nav class=" bg-black text-white py-4 hidden md:block">
+            <div class="flex pt-2 ">
+                <div class="w-1/3">
+                    <h1 class="font-dancing-script text-[30px] ml-20"><a href="index.html">Le Restau</a></h1>
+                </div>
+                <div class="w-2/3 text-center text-[20px]  uppercase ">
+                    <ul class="flex pt-2 ">
+                        <li class=" text-[20px] flex-1 hover:text-orange-500"><a href="galerie.html">Galerie</a></li>
+                        <li class=" text-[20px] flex-1 hover:text-orange-500"><a href="menu.html">Le Menu</a></li>
+                        <li class=" text-[20px] flex-1 hover:text-orange-500"><a href="platDuJour.html">Plats Du
+                                Jour</a></li>
+                        <li class=" text-[20px] flex-1 hover:text-orange-500"><a href="about.html">A Propos De Nous</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" w-1/3 pt-2 text-[20px]">
+                    <div class="mx-10">
+                        <ul class="flex  gap-5 ">
+                            <li><i class="fa fa-user"></i> </li>
+                            <li><i class="fa fa-cart-shopping"></i>
+                            <li><i class="fa fa-search"></i> </li>
+                            <li> <button class="bg-orange-400 text-white rounded-lg px-4">Commander</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <section class=" md:my-20 md:mx-10  hidden md:block">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="bg-gray-900 flex flex-col sm:flex-row md:rounded-lg p-4 ">
+                <div class="md:w-1/3 mx-auto">
+                    <img src="images/burger1.jpg" class="rounded-full mx-auto py-4" width="200" alt="">
+                </div>
+                <div class="md:w-2/3 text-white my-auto mx-auto md:mx-2">
+                    <h5 class="mb-4 font-bold text-[24px] font-dancing-script ">today plats</h5>
+                    <h4 class="mb-4 font-bold text-[34px] font-dancing-script ">20% off</h4>
+                    <button class="bg-orange-500 text-white text-[30px] px-4 rounded-md "> Commandez
+                        <i class="fa fa-cart-shopping"></i> </button>
+                </div>
+            </div>
+            <div class="bg-gray-900 flex flex-col sm:flex-row md:rounded-lg p-4 ">
+                <div class="md:w-1/3 mx-auto">
+                    <img src="images/burger5.png" class="rounded-full mx-auto py-4" width="200" alt="">
+                </div>
+                <div class="md:w-2/3 text-white my-auto mx-auto md:mx-2">
+                    <h5 class="mb-4 font-bold text-[24px] font-dancing-script ">today Entrees</h5>
+                    <h4 class="mb-4 font-bold text-[34px] font-dancing-script ">15% off</h4>
+                    <button class="bg-orange-500 text-white text-[30px] px-4 rounded-md"> Commandez <i
+                            class="fa fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="m-4 my-8">
+        <div class="flex gap-4 mb-4">
+            <div class="w-4/5">
+                <div class="flex gap-4 mb-4">
+                    <div class="w-1/2">
+                        <img class="w-full h-full" src="images/burger1.jpg" alt="">
+                    </div>
+                    <div class="w-1/2">
+                        <img class="w-full h-full" src="images/burger2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/5">
+                <img class="w-full h-full" src="images/burger3.jpg" alt="">
+            </div>
+        </div>
+        <div class="flex gap-4 mb-4">
+            <div class="w-1/5">
+                <img class="w-full h-64" src="images/pizza3.jpg" alt="">
+            </div>
+            <div class="w-4/5">
+                <div class="flex gap-4 mb-4">
+                    <div class="w-1/2">
+                        <img class="w-full h-64" src="images/tacos2.jpg" alt="">
+                    </div>
+                    <div class="w-1/2">
+                        <img class="w-full h-64" src="images/tacos3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-4 mb-4">
+            <div class="w-1/2">
+                <div class="flex gap-4 mb-4">
+                    <div class="w-1/2">
+                        <img class="w-full h-full" src="images/burger2.jpg" alt="">
+                    </div>
+                    <div class="w-1/2">
+                        <img class="w-full h-full" src="images/tacos3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <div class="flex gap-4 mb-4">
+                    <div class="w-1/2">
+                        <img class="w-full h-64" src="images/pizza2.jpg" alt="">
+                    </div>
+                    <div class="w-1/2">
+                        <img class="w-full h-64" src="images/burger5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" ">
+        <div id="backgroundBlur" class="fixed inset-0 bg-gray-800 bg-opacity-95 hidden"></div>
+
+        <div id="myModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+            <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                <div class="modal-content py-4 text-left px-6">
+                    <button id="modalClose"
+                        class="px-4 py-2 flex-1 bg-gray-500 text-white  rounded hover:bg-gray-400 focus:outline-none">Fermer
+                    </button>
+                    <h2 class="text-2xl font-semibold">Pizza Delicious</h2>
+                    <div class="flex items-center">
+                        <img src="images/pizza1.jpg" class="mx-auto w-full h-64" alt="">
+                    </div>
+                    <p class="text-[20px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat voluptates
+                        impedit distinctio
+                        quod eveniet iure error labore ullam et aliquam ad sed adipisci ex ab aspernatur, reprehenderit
+                        accusamus quasi dignissimos.</p>
+                </div>
+                <div class="modal-footer p-4 flex">
+                    <span class="flex-1 text-orange-500 text-left text-[24px] px-4">$19.2</span>
+                    <span class="flex-1 text-right px-4 fa fa-cart-shopping text-orange-500 text-[24px]"></span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="grid grid-cols-1 md:grid-cols-3 text-[20px] bg-gray-900 text-white py-20 mt-20">
+            <div class="grid">
+                <div class="grid-col-1 text-center">
+                    <h1 class="title font-dancing-script text-[34px]">Contact US</h1>
+                </div>
+                <div class="grid-col-1 text-center">
+                    <i class="  text-center fa fa-location-dot"></i> <span>31 rue Charles Brissaud 17430</span>
+                </div>
+                <div class="grid-col-1 text-center">
+                    <i class="  text-center fa fa-phone"></i> <span>contact 07-88-94-91-19</span>
+                </div>
+                <div class="grid-col-1 text-center">
+                    <i class="  text-center fa fa-regular fa-envelope"></i> <span> african-food@gmail.com</span>
+                </div>
+            </div>
+            <div class="grid md:order-3">
+                <div class="grid-col-1 text-center">
+                    <h1 class="title font-dancing-script text-[34px]">Opening Day</h1>
+                </div>
+                <div class="grid-col-1 text-center font-dancing-script text-[30px]">
+                    EveryDay
+                </div>
+                <div class="grid-col-1 text-center">
+                    16h-22h
+                </div>
+            </div>
+            <div class="grid my-8 md:order-2">
+                <div class="grid-col-1 text-center">
+                    <h1 class="title font-dancing-script text-[34px]">Feane</h1>
+                </div>
+                <div class="grid-col-1 text-center">
+                    <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                        Latin words, combined with</p>
+                </div>
+                <div class="grid-col-1 text-center">
+                    <div class="flex text-orange-500">
+                        <ul class="flex mx-auto gap-4">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                            <li><i class="fa-brands fa-pinterest"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-col-1 text-center">
+                    <p>
+                        © 2023 All Rights Reserved By Free Html Templates
+                    </p>
+                </div>
+                <div class="grid-col-1 text-center">
+                    <p>
+                        © Distributed By ThemeWagon
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
